@@ -7,7 +7,7 @@
 <h1>Issue Certificate</h1>
 
 {#if form?.success}
-	<p>Certificate issued for {form.name}!!</p>
+	<p>Certificate issued for {form.id}!!</p>
 {:else}
 	<form class="pt-16" action="/issue" method="POST">
 		<div class="relative z-0 mb-6 w-full group">

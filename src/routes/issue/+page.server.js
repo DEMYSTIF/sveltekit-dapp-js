@@ -1,17 +1,16 @@
-export async function load() {
-    let user = {
-        name: 'Mobin'
-    };
-    return { user };
-}
+import { signer } from '$lib/ethers';
+import { deployer, contract } from '$lib/details';
 
 export const actions = {
     default: async ({ request }) => {
         let form = await request.formData();
-        console.log(form);
+        let payload = Object.fromEntries(form)
+        console.log(payload);
+        console.log(signer)
+        console.log(deployer)
         return {
             success: true,
-            name: 'Mobin'
+            id: payload.certificate_id
         };
     }
 };
