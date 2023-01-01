@@ -13,7 +13,7 @@
   </button>
 
 <div class="flex flex-col space-y-8">
-	<form action="">
+	<form action="/certificate?/getCert" method="POST">
 		<label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label
 		>
 		<div class="relative">
@@ -36,6 +36,7 @@
 			<input
 				type="search"
 				id="default-search"
+				name="cert_id"
 				class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
 				placeholder="Enter the unique certificate ID"
 				required
