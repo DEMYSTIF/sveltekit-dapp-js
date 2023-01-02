@@ -1,7 +1,7 @@
 <script>
 	export let form;
 	// export let data;
-    // console.log(form)
+	// console.log(form)
 </script>
 
 <h1>Issue Certificate</h1>
@@ -49,7 +49,9 @@
 			>
 				<option selected disabled>Course Title</option>
 				<option value="Certified Ethereum Developer">Certified Ethereum Developer</option>
-				<option value="Certified Hyperledger Fabric Developer">Certified Hyperledger Fabric Developer</option>
+				<option value="Certified Hyperledger Fabric Developer"
+					>Certified Hyperledger Fabric Developer</option
+				>
 				<option value="Certified Blockchain Architect">Certified Blockchain Architect</option>
 				<option value="Certified Blockchain Startup">Certified Blockchain Startup</option>
 			</select>
