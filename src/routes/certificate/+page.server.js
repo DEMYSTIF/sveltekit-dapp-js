@@ -8,6 +8,7 @@ export const actions = {
 		let result = await contractInstance.Certificates(payload.cert_id);
 		console.log(result);
 		return {
+			id: payload.cert_id,
 			response: result
 		};
 	}

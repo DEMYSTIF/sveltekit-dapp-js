@@ -5,7 +5,7 @@ module.exports = {
 	defaultNetwork: 'localhost',
 	networks: {
 		localhost: {
-			url: 'http://localhost:8545'
+			url: 'http://127.0.0.1:8545'
 		}
 	},
 	solidity: '0.8.17',

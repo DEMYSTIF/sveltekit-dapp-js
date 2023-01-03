@@ -1,7 +1,15 @@
 <script>
+	import {} from '$lib/details.json';
 	async function login() {
 		let account = await window.ethereum.request({ method: 'eth_requestAccounts' });
-		alert('Connected to ' + account);
+		let deployer = '0x81e69ce6583a0ea130f1207bbfc13d6e86c35b61';
+		// console.log(deployer);
+
+		if (deployer == account) {
+			alert('Connected');
+		} else {
+			alert('Invalid account');
+		}
 	}
 </script>
 

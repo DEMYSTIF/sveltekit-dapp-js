@@ -1,6 +1,6 @@
 <script>
 	let src = './certificate.svg';
-	import MetaMask from "../components/MetaMask.svelte";
+	import MetaMask from '../components/MetaMask.svelte';
 </script>
 
 <img class="mx-auto w-1/6" {src} alt="logo" />
